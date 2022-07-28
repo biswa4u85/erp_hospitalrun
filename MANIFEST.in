@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erp_hospitalrun *.css
+recursive-include erp_hospitalrun *.csv
+recursive-include erp_hospitalrun *.html
+recursive-include erp_hospitalrun *.ico
+recursive-include erp_hospitalrun *.js
+recursive-include erp_hospitalrun *.json
+recursive-include erp_hospitalrun *.md
+recursive-include erp_hospitalrun *.png
+recursive-include erp_hospitalrun *.py
+recursive-include erp_hospitalrun *.svg
+recursive-include erp_hospitalrun *.txt
+recursive-exclude erp_hospitalrun *.pyc
