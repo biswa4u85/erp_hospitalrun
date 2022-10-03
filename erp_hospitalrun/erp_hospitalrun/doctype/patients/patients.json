@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "P:-.###",
+ "creation": "2022-09-23 11:49:02.636472",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "published",
+  "route",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "sex",
+  "date_of_birth",
+  "place_of_birth",
+  "occupation",
+  "phone",
+  "address",
+  "patient_status",
+  "external_patient_id",
+  "blood_type",
+  "clinic_site",
+  "referred_by",
+  "referred_date",
+  "religion",
+  "parentguardian",
+  "payment_profile",
+  "email",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Published"
+  },
+  {
+   "depends_on": "published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sex",
+   "options": "Sex"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Place Of Birth",
+   "options": "Place Of Birth"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Occupation",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "patient_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Status",
+   "options": "Patient Status"
+  },
+  {
+   "fieldname": "external_patient_id",
+   "fieldtype": "Link",
+   "label": "External Patient Id",
+   "options": "External Patient Id"
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Blood Type",
+   "options": "Blood Type"
+  },
+  {
+   "fieldname": "clinic_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Clinic Site",
+   "options": "Clinic Site"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Referred By",
+   "options": "Referred By"
+  },
+  {
+   "fieldname": "referred_date",
+   "fieldtype": "Date",
+   "label": "Referred Date"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Religion",
+   "options": "Religion"
+  },
+  {
+   "fieldname": "parentguardian",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent/Guardian",
+   "options": "Parents"
+  },
+  {
+   "fieldname": "payment_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payment Profile",
+   "options": "Payment Profile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Countryes"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-tag",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-09-28 12:39:42.791671",
+ "modified_by": "Administrator",
+ "module": "Erp Hospitalrun",
+ "name": "Patients",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Blogger"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

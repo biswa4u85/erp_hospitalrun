@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-09-30 11:15:45.342953",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "published",
+  "route",
+  "date_received",
+  "vendor",
+  "invoice_number",
+  "location",
+  "aisle_location",
+  "gift_in_kind",
+  "inventory_item",
+  "quantity",
+  "purchase_cost",
+  "vendor_item_number",
+  "seriallot_number",
+  "expiration_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Published"
+  },
+  {
+   "depends_on": "published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "label": "Date Received "
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor ",
+   "options": "vendor"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Invoice Number",
+   "options": "Invoice Number"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Locations"
+  },
+  {
+   "fieldname": "aisle_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "   Aisle Location",
+   "options": "Aisle Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "gift_in_kind",
+   "fieldtype": "Check",
+   "label": "Gift in Kind"
+  },
+  {
+   "fieldname": "inventory_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inventory Item ",
+   "options": "Inventory Items"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity "
+  },
+  {
+   "fieldname": "purchase_cost",
+   "fieldtype": "Data",
+   "label": "Purchase Cost "
+  },
+  {
+   "fieldname": "vendor_item_number",
+   "fieldtype": "Data",
+   "label": "Vendor Item Number"
+  },
+  {
+   "fieldname": "seriallot_number",
+   "fieldtype": "Data",
+   "label": "Serial/Lot Number"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-tag",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-10-03 14:56:24.640240",
+ "modified_by": "Administrator",
+ "module": "Erp Hospitalrun",
+ "name": "Inventory Received",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Blogger"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

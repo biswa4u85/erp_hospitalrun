@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-09-27 12:31:59.578772",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "published",
+  "route",
+  "inventory_item",
+  "quantity",
+  "fulfill_request",
+  "delivery_location",
+  "delivery_aisle",
+  "bill_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Published"
+  },
+  {
+   "depends_on": "published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "inventory_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inventory Item",
+   "options": "Inventory Item"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "fulfill_request",
+   "fieldtype": "Check",
+   "label": "Fulfill Request"
+  },
+  {
+   "fieldname": "delivery_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Delivery Location",
+   "options": "Delivery Location"
+  },
+  {
+   "fieldname": "delivery_aisle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Delivery Aisle",
+   "options": "Delivery Aisle"
+  },
+  {
+   "fieldname": "bill_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bill To",
+   "options": "Bill To"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-tag",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-09-27 12:40:00.661427",
+ "modified_by": "Administrator",
+ "module": "Erp Hospitalrun",
+ "name": "Inventory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Blogger"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-09-23 11:49:34.864854",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "published",
+  "route",
+  "patient",
+  "visit",
+  "medication",
+  "prescription",
+  "prescription_date",
+  "quantity_requested",
+  "refills",
+  "fulfill_request_now"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Published"
+  },
+  {
+   "depends_on": "published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient ",
+   "options": "Patients"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Link",
+   "label": "Visit",
+   "options": "Visit"
+  },
+  {
+   "fieldname": "medication",
+   "fieldtype": "Link",
+   "label": "Medication",
+   "options": "Medications"
+  },
+  {
+   "fieldname": "prescription",
+   "fieldtype": "Small Text",
+   "label": "Prescription "
+  },
+  {
+   "fieldname": "prescription_date",
+   "fieldtype": "Date",
+   "label": "Prescription Date"
+  },
+  {
+   "fieldname": "quantity_requested",
+   "fieldtype": "Data",
+   "label": "Quantity Requested "
+  },
+  {
+   "fieldname": "refills",
+   "fieldtype": "Data",
+   "label": "Refills"
+  },
+  {
+   "default": "0",
+   "fieldname": "fulfill_request_now",
+   "fieldtype": "Check",
+   "label": "Fulfill Request Now"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-tag",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-09-30 13:02:28.325711",
+ "modified_by": "Administrator",
+ "module": "Erp Hospitalrun",
+ "name": "Medication",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Blogger"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

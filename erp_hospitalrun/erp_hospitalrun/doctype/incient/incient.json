@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-09-20 11:42:21.409526",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "published",
+  "route",
+  "sentinel_event",
+  "date_of_incient",
+  "departments",
+  "incient_reported_to_full_name",
+  "category",
+  "category_item",
+  "status",
+  "patient_impacted",
+  "incient_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Published"
+  },
+  {
+   "depends_on": "published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sentinel_event",
+   "fieldtype": "Check",
+   "label": "Sentinel Event"
+  },
+  {
+   "fieldname": "date_of_incient",
+   "fieldtype": "Datetime",
+   "label": "Date of Incient"
+  },
+  {
+   "fieldname": "incient_reported_to_full_name",
+   "fieldtype": "Data",
+   "label": "Incient Reported to (Full Name)"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "category_item",
+   "fieldtype": "Link",
+   "label": "Category item",
+   "options": "Category item"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Reported",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_impacted",
+   "fieldtype": "Data",
+   "label": "Patient Impacted"
+  },
+  {
+   "fieldname": "incient_description",
+   "fieldtype": "Small Text",
+   "label": "Incient Description"
+  },
+  {
+   "fieldname": "departments",
+   "fieldtype": "Link",
+   "label": "Departments",
+   "options": "Departments"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-tag",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-09-20 12:01:04.797234",
+ "modified_by": "Administrator",
+ "module": "Erp Hospitalrun",
+ "name": "Incient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Blogger"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}
